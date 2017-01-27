@@ -1,0 +1,32 @@
+<div class="container-fluid row fixedHeight" id="ideadetails"  ng-controller="IdeaBoxDAshBoardCtrl" >		
+			
+	<div class="card card-inverse card-warning nameOfProject" ng-repeat="details in showIndividualDetails">
+		<div class="card-block">
+			<div class="row card-blockquote">
+				 <div class="col-md-3">
+                            <img class="lib-img-show" src="images/Layer 16.png" style="height: 181px;width: 300px;">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="header">
+                               {{details.name}}
+                            </div>
+                            <div class="desc">
+                            {{details.justification}} 
+                            </div>
+							
+							
+							<!--<button ng-click="count = {{count}}+1" ng-init="count=15" style="float:left;" class="likes" >
+   <img src="images/List_Like.svg"/>
+								 {{count}} Thumps Up
+  </button>
+
+						
+							
+							<div class="likes" style="float:left;margin-left:20px;"><img src="images/List_Like.svg" class="icon"/>50 Following</div>-->
+                        </div>
+			</div>
+		</div>
+	
+	
+	</div>
+</div>
